@@ -73,13 +73,13 @@ body {
         }
         
         /* setting untuk tampilan desktop */
-        @media (min-width: 768px) {
+       /* @media (min-width: 768px) {
           #section1 {
           margin-bottom: 70px;
           padding-bottom: 70px;
           background-color: rgba(255, 255, 255, 0.5); /*memberikan latar belakang dengan efek transparan */
             backdrop-filter: blur(10px); /*memberikan efek blur pada latar belakang */
-        }
+        /*}
         #section2 {
           margin-bottom: 70px;
           padding-bottom: 70px;
@@ -92,8 +92,8 @@ body {
           margin-bottom: 70px;
           padding-bottom: 70px;
         }
-        }
-        
+        } 
+        */
         /* style untuk footer */
         .social-dropdown {
   position: fixed; /* Ubah posisi menjadi fixed agar ikon tetap di tempatnya */
