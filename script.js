@@ -1,16 +1,16 @@
 // Array latar belakang gambar
 const backgroundImages = [
-  'image-BG/background.png',   // Gambar latar belakang pertama (default)
-  'image-BG/background1.png',  // Gambar latar belakang kedua
-  'image-BG/background2.png',   // Gambar latar belakang ketiga
-  'image-BG/background3.png', // Gambar latar belakang keempat
-  'image-BG/background4.png', // Gambar latar belakang kelima
-  'image-BG/background5.png', // Gambar latar belakang keenam
-  'image-BG/background6.png', // Gambar latar belakang ketujuh
-  'image-BG/background7.png', // Gambar latar belakang kedelapan 
-  'image-BG/background8.png', // Gambar latar belakang kesembilan
-  'image-BG/background9.png', // Gambar latar belakang kesepuluh
-  'image-BG/background10.png' // Gambar latar belakang kesebelas
+  'imageBG/background.png',   // Gambar latar belakang pertama (default)
+  'imageBG/background1.png',  // Gambar latar belakang kedua
+  'imageBG/background2.png',   // Gambar latar belakang ketiga
+  'imageBG/background3.png', // Gambar latar belakang keempat
+  'imageBG/background4.png', // Gambar latar belakang kelima
+  'imageBG/background5.png', // Gambar latar belakang keenam
+  'imageBG/background6.png', // Gambar latar belakang ketujuh
+  'imageBG/background7.png', // Gambar latar belakang kedelapan 
+  'imageBG/background8.png', // Gambar latar belakang kesembilan
+  'imageBG/background9.png', // Gambar latar belakang kesepuluh
+  'imageBG/background10.png' // Gambar latar belakang kesebelas
 ];
 
 // Array file audio latar belakang yang sesuai
