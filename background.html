@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Background</title>
+    <!-- Tambahkan semua link stylesheet dan script yang Anda butuhkan di sini -->
+    <style>
+      /* CSS untuk modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Tampilan palet warna dan daftar gambar latar belakang */
+/* Sesuaikan tampilan sesuai kebutuhan Anda */
+    </style>
+</head>
+<body>
+  <button id="openBackgroundModal">Pilih Background</button>
+
+<!-- Modal untuk memilih latar belakang -->
+<div id="backgroundModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Pilih Latar Belakang</h2>
+    <label for="backgroundType">Pilih jenis latar belakang:</label>
+    <select id="backgroundType">
+      <option value="color">Background Color</option>
+      <option value="image">Background Image</option>
+    </select>
+    <div id="colorPicker" style="display: none;">
+      <h3>Pilih Warna Latar Belakang</h3>
+      <input type="color" id="backgroundColor">
+    </div>
+    <div id="imagePicker" style="display: none;">
+      <h3>Pilih Gambar Latar Belakang</h3>
+      <!-- Daftar gambar latar belakang yang tersedia -->
+      <select id="backgroundImage">
+        <option value="image1.jpg">Image 1</option>
+        <option value="image2.jpg">Image 2</option>
+        <!-- Tambahkan lebih banyak pilihan gambar jika diperlukan -->
+      </select>
+    </div>
+    <button id="applyBackground">Terapkan</button>
+  </div>
+</div>
+<script>
+  // Tambahkan event listener untuk thumbnail gambar
+const thumbnailImages = document.querySelectorAll('.thumbnail img');
+thumbnailImages.forEach(function (thumbnail) {
+  thumbnail.addEventListener('click', function () {
+    const selectedImage = this.getAttribute('data-image');
+    document.body.style.backgroundImage = `url('${selectedImage}')`;
+
+    // Tutup modal setelah menerapkan perubahan
+    modal.style.display = 'none';
+  });
+});
+
+// Tambahkan event listener untuk membuka modal saat tombol di bawah diklik
+document.getElementById('changeImageBg').addEventListener('click', function () {
+  modal.style.display = 'block';
+});
+
+// Tambahkan event listener untuk menutup modal saat ikon close di klik
+const closeBtn = document.querySelector('.close');
+closeBtn.addEventListener('click', function () {
+  modal.style.display = 'none';
+});
+
+// Tambahkan event listener untuk menutup modal saat mengklik di luar modal
+window.addEventListener('click', function (e) {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+</script>
+</body>
+</html>

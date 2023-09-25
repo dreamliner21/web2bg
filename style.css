@@ -1,0 +1,133 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+body {
+            background-image: url('background.png'); /* Gambar latar belakang default */
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-attachment: fixed;
+            /* backdrop-filter: blur(100vh); */
+            animation-name: animate__rollIn;
+        }
+
+        .btn-transparent {
+            background-color: transparent;
+            border: none;
+            color: white; /* Warna teks sesuai keinginan Anda */
+        }
+
+        .btn-transparent:hover {
+            background-color: transparent; /* Warna latar belakang saat hover */
+            color: transparent; /* Warna teks saat hover sesuai keinginan Anda */
+        }
+
+        /* Font and Font Color for Section 1 */
+        #section1 {
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            color: gray;
+            background-color: rgba(255, 255, 255, 0.5); /*memberikan latar belakang dengan efek transparan */
+            backdrop-filter: blur(10px); /*memberikan efek blur pada latar belakang */
+            border-radius: 9px;
+        }
+
+        /* Font and Font Color for Section 2 */
+        #section2 {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: gray;
+            background-color: rgba(255, 255, 255, 0.5); /*memberikan latar belakang dengan efek transparan */
+            backdrop-filter: blur(10px); /*memberikan efek blur pada latar belakang */
+            border-radius: 9px;
+        }
+
+        /* Font and Font Color for Section 3 */
+        #section3 {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: gray;
+            background-color: rgba(255, 255, 255, 0.5); /*memberikan latar belakang dengan efek transparan */
+            backdrop-filter: blur(10px); /*memberikan efek blur pada latar belakang */
+        }
+
+        /* Font and Font Color for Section 4 */
+        #section4 {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: gray;
+            background-color: rgba(255, 255, 255, 0.5); /*memberikan latar belakang dengan efek transparan */
+            backdrop-filter: blur(10px); /*memberikan efek blur pada latar belakang */
+        }
+        
+        /* .container {
+           position: center;
+         }
+        Menambahkan margin bottom untuk tiap section */
+        #section1,
+        #section2,
+        #section3,
+        #section4 {
+          margin-bottom: 60px;
+          text-align: center;
+        }
+        
+        /* setting untuk tampilan desktop */
+        @media (min-width: 768px) {
+          #section1 {
+          margin-bottom: 70px;
+          padding-bottom: 70px;
+          background-color: rgba(255, 255, 255, 0.5); /*memberikan latar belakang dengan efek transparan */
+            backdrop-filter: blur(10px); /*memberikan efek blur pada latar belakang */
+        }
+        #section2 {
+          margin-bottom: 70px;
+          padding-bottom: 70px;
+        }
+        #section3 {
+          margin-bottom: 70px;
+          padding-bottom: 70px;
+        }
+        #section4 {
+          margin-bottom: 70px;
+          padding-bottom: 70px;
+        }
+        }
+        
+        /* style untuk footer */
+        .social-dropdown {
+  position: fixed; /* Ubah posisi menjadi fixed agar ikon tetap di tempatnya */
+  bottom: 23px; /* Atur jarak dari bawah */
+  right: 50px; /* Atur jarak dari kanan */
+  display: inline-block;
+  cursor: pointer;
+}
+
+.social-dropdown .social-links {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  right: 0;
+  top: auto;
+  bottom: 100%; /* Mengatur dropdown muncul tepat di atas ikon */
+  z-index: 1;
+  min-width: 150px;
+}
+
+.social-dropdown .social-links a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-dropdown .social-links a:hover {
+  background-color: #f2f2f2;
+}
+
+.social-dropdown.active .social-links {
+  display: block;
+}
+/* Tambahkan lebih banyak gaya sesuai kebutuhan Anda */

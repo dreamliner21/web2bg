@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Halaman Web</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.28/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <a class="navbar-brand" href="#">Reduced Interest in Reading</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#section1" data-translate="nav_intro">Introduction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2" data-translate="nav_causes">Causes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3" data-translate="nav_solutions">Solutions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section4" data-translate="nav_conclusion">Conclusion</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Tombol Theme Toggle dengan icon Bulan dan Matahari -->
+    <button id="themeToggle" class="btn btn-sm btn-transparent">
+      <i id="themeIcon" class="fas fa-sun"></i>
+    </button>
+</nav>
+
+<!-- Tambahkan elemen audio dengan autoplay -->
+<audio id="backgroundAudio" autoplay loop>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Tombol Setting Latar Belakang -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col text-right">
+            <button id="changeImageBg" class="btn btn-sm btn-primary btn-transparent position-fixed"
+            style="bottom: 20px; right: 20px;">
+                <i class="fa-regular fa-image fa-flip" style="color: #ffffff;"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container">
+    <section id="section1">
+        <h2 data-translate="intro_title">Introduction</h2>
+        <p data-translate="intro_content">Hello, I am Paul, a high school student in the city of Semarang. This time I want to discuss the problem of "THE YOUNG PEOPLE WHO ARE LAZY TO READ". Curious? let's go to reading!</p>
+    </section>
+
+    <section id="section2">
+        <h3 data-translate="causes_title">Causes</h3>
+        <p data-translate="causes_content">We cannot deny technological advances in the information sector. This progress will cause young people to become lazy about reading because young people will be more inclined to play online games instead of reading. This attitude is what makes young people are no longer interested in reading, whether reading story books or novels.</p>
+    </section>
+
+    <section id="section3">
+        <h3 data-translate="solutions_title">Solutions</h3>
+        <p data-translate="solutions_content">Because there is advanced technology in the information sector, the steps we can take are to create a story through online media and create literacy activities, both at school, in the scope of work, or in society. This activity will have an impact on people's lifestyles, those who were previously lazy about reading will now be more enthusiastic about reading.</p>
+    </section>
+
+    <section id="section4">
+        <h2 data-translate="conclusion_title">Conclusion</h2>
+        <p data-translate="conclusion_content">The conclusion of the problem that has been discussed is the reduced interest in reading among young people nowadays, caused by advances in technology in the information sector. This progress is what makes young people increasingly lazy to read.</p>
+    </section>
+</div>
+
+<!-- footer -->
+<div class="social-dropdown">
+  <i class="fa-regular fa-user fa-flip" style="color: #ffffff;"></i>
+  <div class="social-links">
+    <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.28/sweetalert2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script> -->
+<script src="script.js"></script>
+</body>
+</html>
